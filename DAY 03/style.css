@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'helvetica neue';
+    src: url('./helvetica-neue-5/HelveticaNeueLight.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica neue';
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(3, 42, 55);
+    padding: 20px;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.card1 {
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    /* object-fit: cover; */
+}
+
+.card1 img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* object-position: top; */
+
+}
+
+.bottom {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    bottom: -50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all .4s ease;
+    background: linear-gradient(transparent, black);
+    color: white;
+}
+
+.bottom h1 {
+    font-size: 20px;
+}
+
+.card1:hover .bottom {
+    bottom: 0;
+
+}
