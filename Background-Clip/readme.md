@@ -64,7 +64,7 @@ Every HTML element is like a **gift box 🎁** with **three layers**:
 
 🧠 Think: Clean border look ✨
 
-###🔹 3. content-box
+### 🔹 3. content-box
 
 📌 Background appears only behind the content
 
@@ -80,7 +80,7 @@ Every HTML element is like a **gift box 🎁** with **three layers**:
 
 🧠 Think: Highlight text area only
 
-###🔥 4. text (SPECIAL & IMPORTANT)
+### 🔥 4. text (SPECIAL & IMPORTANT)
 
 📌 Background is clipped inside the text
 
@@ -106,7 +106,7 @@ color: transparent is mandatory
 
 🧠 Think: Background becomes the TEXT color 🎨
 
-###🖍️ 4️⃣ -webkit-text-fill-color
+### 🖍️ 4️⃣ -webkit-text-fill-color
 
 📌 What it does:
 
@@ -149,7 +149,7 @@ Syntax:
 
 🧠 Think: Pencil outline around letters ✏️
 
-###🧠 6️⃣ text-stroke (Standard Property)
+### 6️⃣ text-stroke (Standard Property)
 ```css
 h1 {
   text-stroke: 2px red;
