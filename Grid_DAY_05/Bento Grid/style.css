@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body{
+  height:100vh;
+  width:100%;
+  background-color: black;
+ }
+
+ .parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:3fr 1fr 2fr 2fr;
+    gap: 20px;
+    padding: 20px;
+ }
+ .where{
+    background-image: url("image.png");
+    /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    grid-row:1/3;
+    grid-column:1/2;
+
+}
+.scale{
+    background-image:url("image2.png");
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    grid-row:1/2;
+    grid-column:2/3;
+    border-radius: 20px;
+
+}
+.menu{
+    /* background-color: red; */
+    background-image: url("image3.png");
+    background-size: cover;
+    background-position: center;
+    grid-row:1/2;
+    grid-column:3/4;
+    border-radius: 20px;
+}
+.face{
+    background-image: url("image4.png");
+    background-size: cover;
+    background-position: center;
+    grid-row:1/3;
+    grid-column:4/5;
+}
+.hired{
+    background-image: url("image5.png");
+    background-size: cover;
+    background-position: center;
+    grid-row:3/4;
+    grid-column:1/2;
+}
+.be{
+    background-image:url("image6.png");
+    background-size: cover;
+    background-position: center;
+    grid-row:2/4;
+    grid-column:2/4;
+}
+.phone
+{
+    background-image: url("image7.png");
+    background-size: cover;
+    background-position: center;
+    grid-row:4/5;
+    grid-column:1/3;
+}
+.grade{
+    background-image: url("image8.png");
+    background-size: cover;
+    background-position: center;
+    grid-row:4/5;
+    grid-column:3/4;
+}
+.banner{
+    background-image: url("image9.png");
+    background-size: cover;
+    background-position: center;
+    grid-row:3/5;
+    grid-column:4/5;
+}
+.items{
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid white;
+    transition: all 0.2s ease;
+    overflow: hidden;
+}
+
+.items:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border:5px solid white;
+}

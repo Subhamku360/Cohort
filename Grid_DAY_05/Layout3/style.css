@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+body{
+  height:100vh;
+  width:100%;
+  background-color: black;
+ }
+
+ .parent{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 150px 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                        "section section section"
+                        "Div1 Upper Div3"
+                        "Div1 Lower Div3";
+    gap: 10px;
+ }
+ .header{
+    grid-area: header;
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ }
+ .section{
+    grid-area: section;
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ }
+ .div1{
+    grid-area: Div1;
+    background-color: blue;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ }
+ .Upper{
+    grid-area: Upper;
+    background-color: blue;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ }
+ .Lower{
+    grid-area: Lower;
+    background-color: blue;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ }
+ .div3{
+    grid-area: Div3;
+    background-color: blue;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+ }
